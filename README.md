@@ -32,7 +32,7 @@ Other repositories in the Pressio ecosystem include:
 ## Guides
 
 Development of the three [core Pressio repositories](#core-pressio-repositories) is closely connected.
-The following three guides explain how developers of those libraries can push code, publish releases,
+The first three guides explain how developers of those libraries can push code, publish releases,
 and update the Spack packages.
 
 ### [1. GitHub Workflow](https://github.com/Pressio/pressio-developer-guide/blob/main/github.md)
@@ -51,8 +51,6 @@ The `Spack` guide shows how to update the existing `spack` packages from each co
 This should be done after every new release.
 
 ---
-
-The following guides are not unique to the core Pressio repositories.
 
 ### [4. Containers](https://github.com/Pressio/pressio-developer-guide/blob/main/containers.md)
 
