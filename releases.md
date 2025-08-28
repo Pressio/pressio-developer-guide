@@ -62,4 +62,4 @@ For all of these steps, view previous releases to see what we've done in the pas
 ### 4. Update the Spack packages
 
 Once the GitHub releases are done, the Spack packages must be updated to the latest versions.
-Instructions for this are included in the[Spack](https://github.com/Pressio/pressio-developer-guide/blob/main/spack.md) guide.
+Instructions for this are included in the [Spack](https://github.com/Pressio/pressio-developer-guide/blob/main/spack.md) guide.

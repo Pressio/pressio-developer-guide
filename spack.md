@@ -15,22 +15,25 @@ Jump to:
 Begin by cloning the Pressio fork of the Spack repository:
 
 ```sh
-git clone git@github.com:Pressio/spack.git
+git clone git@github.com:Pressio/spack-packages.git
 ```
 
-Create a new branch off of `develop` with the new version.
+Make sure that the fork's `develop` branch is up to date with the upstream
+Spack repository.
+
+Then create a new branch off of `develop` with the new version.
 For example, for version 0.16.0:
 
-```
+```sh
 git checkout -b add-pressio-version-0.16.0 develop
 ```
 
 ### 2. Update the `package.py` files
 
-All Spack packages are defined in `spack/var/spack/repos/builtin/packages`.
+All Spack packages are defined in `spack-packages/repos/spack_repo/builtin/packages`.
 
-From this directory, there are folders for `pressio-rom`,
-`pressio-ops`, and `pressio-log`, all containing their own
+From this directory, there are folders for `pressio_rom`,
+`pressio_ops`, and `pressio_log`, all containing their own
 `package.py` file that defines the Spack package.
 
 In all three `package.py` files, add the new version:
@@ -67,10 +70,11 @@ For example, `pressio-rom@0.15.0` will only use
 To make sure everything works correctly, it is best to test
 the updated packages before pushing to the Spack repository.
 
-Start by sourcing the forked Spack's setup script:
+Start by pointing your existing Spack installation to the
+packages inside the forked Spack's repo:
 
 ```
-source <path-to-pressio-spack>/share/spack/setup-env.sh
+spack repo add <path-to-pressio-spack-packages>/repos/spack_repo/builtin
 ```
 
 Then you can check the info of the Spack packages to see
